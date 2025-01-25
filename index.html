@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="random_pass_gene.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="outer">
+        <h1 class="outer-heading-1">
+            Generate a 
+        </h1>
+        <h2 class="outer-heading-2">
+            Random Password
+        </h2>
+        <input type="text" class="search_bar" id="search_bar" name="search_bar" placeholder="Password">
+        
+        <button class="btn1" onclick="generate()"><i class="fa fa-bolt" aria-hidden="true"></i> Generate Password</button>
+    </div>
+    <button class="btn2">
+        <i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+    <script>
+        const search= document.querySelector('.search_bar');
+function generate(){
+    const big_alpha="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const small_alpha="abcdefghijklmnopqrstuvwxyz";
+    const no="1234567890";
+    const symb="!@#$%^&*(){}:123456789-=[]';,./mnbvc0x";
+    const arr=[...big_alpha,...small_alpha,...no,...symb];
+    function rand(min,max){
+        return Math.floor(Math.random()*(max-min)+min);
+    }
+    const pass=arr[rand(1,100)]+arr[rand(1,100)]+arr[rand(1,100)]+arr[rand(1,100)]+arr[rand(1,100)]+arr[rand(1,100)]+arr[rand(1,100)]+arr[rand(1,100)]+arr[rand(1,100)]+arr[rand(1,100)]+arr[rand(1,100)]+arr[rand(1,100)];
+    search.value=pass;
+    console.log(pass)
+    };
+    </script>
+</body>
+</html>
