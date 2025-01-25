@@ -1,0 +1,83 @@
+*{
+    margin: 0;padding: 0;box-sizing:border-box;
+}
+
+body,html{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(4, 30, 48);
+}
+
+.outer{
+    width:500px;
+    height:max-content;
+    padding: 30px;
+    background-color:rgb(4, 30, 48);
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    font-family: sans-serif;
+}
+
+.outer-heading-1{
+    color:white;
+    font-size:29px;
+    font-weight: 300;
+}
+
+.outer-heading-2{
+    color:rgb(5, 125, 85);
+    border-bottom:2px solid rgb(5, 125, 85);
+    width:fit-content; 
+    font-weight: 300;
+}
+
+.search_bar{
+    border-radius: 3px;
+    font-size:15px;
+    color:rgb(86, 83, 83);
+    padding: 8px;
+    width:330px;
+    height:35px;
+    background-color: white;
+    border: 0;
+}
+
+.btn1{
+    background-color: rgb(5, 125, 85);
+    color:rgba(255, 255, 255, 0.775);
+    height:35px;
+    width:150px;
+    border-radius: 2px;
+    border:0px;
+}
+.btn1:hover{
+    background-color: rgb(6, 81, 56);
+    color:rgba(255, 255, 255, 0.775);
+    height:35px;
+    width:150px;
+    border-radius: 2px;
+    border:0px;
+    cursor:pointer;
+}
+
+.btn2{
+    position:relative;
+    top:20px;
+    left:-169px;
+    color:rgb(5, 125, 85);
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+}
+.btn2:hover{
+    position:relative;
+    top:18.5px;
+    left:-169px;
+    color:rgb(4, 87, 59);
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    cursor:pointer;
+}
